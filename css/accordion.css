@@ -1,0 +1,90 @@
+.accordion__item {
+    padding: 10px auto;
+    border-top: 1px solid var(--color-beige);
+    transition: all 0.5s;
+  }
+
+  .accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    color: var(--color-black);
+    font-weight: 400;
+    background-color: none;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+    border-radius: 1.25rem;
+    font-family: var(--button-font-family);
+    font-size: 18px;
+    transition: all 0.5s;
+  }
+
+  .accordion__header::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23002d2d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    content: "";
+    transition: all 0.5s;
+  }
+
+  .accordion__item_show .accordion__header::after {
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+  }
+
+  .accordion__item_hidden .accordion__header {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .accordion__body {
+    padding: 0.75rem 1rem;
+    overflow: hidden;
+    background: #fff;
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    color: var(--color-black);
+    font-family: var(--button-font-family);
+    font-weight: 300;
+  }
+
+  .accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  .accordion{
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .faqtitle{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .faqtitle h2{
+    font-family: var(--button-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 52px;
+    color: #000000;
+  }
+
+  @media screen and (max-width: 500px){
+    .accordion{
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/style.css">
+     <title>Document</title>
+</head>
+<body>
+      
+            <header>
+                <div class="header_container">
+                    <div class="container_content w-100 h-100 d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.svg" alt="" style="width: 204px;"></a>
+                        </div>
+                        <div class="header_menu d-lg-flex" >
+                            <nav>
+                                <ul>
+                                    <li><a href="#toursContainer">наши туры</a></li> 
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#formMainModal">забронировать</a></li>
+                                    <li><a href="tel:79664444106">+7 (966) 444-41-06</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="dashboard d-lg-none">
+                            <button aria-label="Menu" class="menuToggle" aria-expanded="false" aria-haspopup="true">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="main w-100 h-800px">
+                    <div class="container main_container h-100">
+                        <div class="row d-flex flex-column main_option h-100 justify-content-center align-items-center">
+                            <h1 class="text-center text-white">Захватывающие туры по Дагестану</h1>
+                            <a href="" class="text-center mt-4" data-bs-toggle="modal" data-bs-target="#formMainModal" style="width: 300px;">Забронировать тур</a>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section id="toursContainer">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12 tour_container">
+                            <div class="tour_option w-100 d-flex flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-between align-items-lg-center">
+                                <div class="tour_title">
+                                    <p>Выберите формат туров</p>
+                                </div>
+                                <div class="tour_format d-flex flex-column align-items-center flex-sm-row justify-content-between">
+                                    <button class="active" id="buttonOneDay">Однодневные</button>
+                                    <button id="buttonTwoPlusDay">Многодневные</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 tour_item">
+                                <div class="tour_odnodnev active">
+                                    <h2>Однодневные</h2>
+                                    <div class="col-12 tour_colonka d-flex flex-column flex-xl-row align-items-center justify-content-xl-evenly">
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/sulak.jpg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Сулакский каньон с прогулкой на катере по каньону</p>
+                                                    <span>Возможность за один день увидеть главные достопримечательности республики и с ветерком прокатиться на катере по бирюзовым водам реки Сулак.</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/kahib.jpg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Гоор / Кахиб</p>
+                                                    <span>Кахиб — сторожевые башни, загадочные символы, каменные лабиринты древних строений.
+                                                        Гоор — ещё один незабываемый край башен со своими живописными руинами оборонительного комплекса на краю пропасти.</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 tour_colonka d-flex flex-column flex-xl-row align-items-center justify-content-xl-evenly">
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/gunib.jpg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Гуниб</p>
+                                                    <span>Полюбуйтесь на единственный подземный водопад в России - Салтинский и и загляните в аул Гуниб - одно из самых интересных мест горного Дагестана</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/gam.jpg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Гамсутль</p>
+                                                    <span>Предлагаем посетить уникальный подземный водопад и заброшенный аул-призрак Гамсутль</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 tour_colonka d-flex flex-column flex-xl-row align-items-center justify-content-xl-evenly">
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/hunzah.jpg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Хунзахский район</p>
+                                                    <span>Незабываемая экскурсия по горному Дагестану, в котором мы покажем Вам самые красивые локации хунзахского района</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/derbent.jpeg); background-position: center; background-size: cover;"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Дербент</p>
+                                                    <span>Проникнемся историей и восточным колоритом одного из древнейших городов мира на обзорной прогулке и увидим экраноплан «Лунь 903»</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tour_mnogodnev">
+                                    <h2>Многодневные</h2>
+                                    <div class="col-12 tour_colonka d-flex flex-column flex-xl-row align-items-center justify-content-xl-evenly">
+                                        <div class="tour">
+                                            <div class="tour_background" style="background: url(img/tour_kanion_sulak.jpg);"></div>
+                                            <div class="tour_info">
+                                                <div class="tour_jsss1">
+                                                    <div class="jsss1">
+                                                        <img src="img/calendar.svg" alt="">
+                                                        <span>Ежедневные выезды</span>
+                                                    </div>
+                                                    <div class="jsss2">
+                                                        <div class="jsss3">
+                                                            <img src="img/people.svg" alt="">
+                                                            <span>10</span>
+                                                        </div>
+                                                        <div class="jsss4">
+                                                            <img src="img/rub.svg" alt="">
+                                                            <span>4 500₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tour_jsss2">
+                                                    <p>Джип-тур планета дагестана</p>
+                                                    <span>Тур рассчитан на тех, кто любит получать много впечатлений, при этом не выходить из зоны комфорта.</span>
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="container tour_podbor">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 invidual_tour d-flex flex-column flex-xl-row justify-content-evenly">
+                                <div class="left_tour_indivudual d-flex flex-column justify-content-center">
+                                    <p class="text-white">Не смогли выбрать подходящий тур?</p>
+                                    <span class="text-white">Ответьте на несколько вопросов и мы подберем для вас лучший вариант</span>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подобрать</a>
+                                </div>
+                                <div class="d-flex align-items-center image_goor justify-content-center">
+                                    <img src="img/goor.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="container gallery_container">
+                        <div class="row">
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/kahib.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/irganai.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/gunib.JPG" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/sulak.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide4.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide5.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide6.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide7.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide8.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide9.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+
+                                  <div class="carousel-item">
+                                    <img src="img/slide9.jpg" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                      <h5>Метка первого слайда</h5>
+                                      <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                                    </div>-->
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Предыдущий</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Следующий</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container">
+                        <div class="rewies_title mb-3">
+                            <h2>Видео с туров</h2>
+                        </div>
+                        <div class="row row-cols-2 row-cols-xl-4">
+                            <div class="col">
+                                <div class="rewies">
+                                    <video controls="controls" >
+                                        <source src="video/video1.mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="rewies">
+                                    <video controls="controls" >
+                                        <source src="video/video2.mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="rewies">
+                                    <video controls="controls" >
+                                        <source src="video/video3.mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="rewies">
+                                    <video controls="controls" >
+                                        <source src="video/video4.mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="container tour_podbor">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 olimpiad_tour d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start">
+                                <div class="left_tour_indivudual d-flex flex-column justify-content-center">
+                                    <p class="text-white">Скидка 10%</p>
+                                    <span class="text-white">Для участников всероссийского туристического слета</span>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#formMainModal">Подобрать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container">
+                        <div class="row feedback">
+                            <h2>Нужна помощь?</h2>
+                            <p>Просто оставьте заявку и мы составим для Вас индивидуальный тур или поможем с выбором!</p>
+                            <div class="feedback_form d-flex justify-content-center">
+                                <form id="mail" class="form" class="d-flex justify-content-between">
+                                    <input type="text" placeholder="Имя" name="nameform" required>
+                                    <input type="text" class="tel" placeholder="Телефон" name="phoneform" required>
+                                    <input type="date" name="date">
+                                    <input type="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="faq" id="about">
+                    <div class="faqtitle">
+                        <h2>Часто задаваемые вопросы</h2>
+                    </div>
+                    <div class="faq_accordion">
+                        <div class="accordion" id="accordion-1">
+                            <div class="accordion__item accordion__item_show">
+                              <div class="accordion__header">
+                                Безопасно ли ехать одной девушке?
+                              </div>
+                              <div class="accordion__body">
+                                Вполне. Ещё никто не оставался одиноким в туре. Вы будете всё время среди людей (если сами не пожелаете уединиться).
+                                    Гид всё время рядом или на связи. Местные жители славятся радушием, добротой и гостеприимством
+                              </div>
+                            </div>
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                В целом, безопасно ли в республике?
+                              </div>
+                              <div class="accordion__body">
+                                В Дагестане безопасно ровно также , как и в любом другом регионе РФ. В добавок к этому, здесь очень гостеприимно и заботливо. К тому же, наши гиды с Вами до конца дня и на связи даже ночью.
+                              </div>
+                            </div>
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                Дресс-код одежды. Как можно одеваться и как не стоит?
+                              </div>
+                              <div class="accordion__body">
+                                В связи с особенностью местного менталитета мы рекомендуем придерживаться следующих норм:
+                
+                                - Одежда не должна быть вызывающей (юбки и шорты выше колена, открытые топы и майки)
+                                - При входе в мечеть или другие святые места надевать косынку (женщинам)
+                                - Рекомендуем взять с собой джинсы, футболки , юбки (ниже колена), сарафаны и туники
+                              </div>
+                            </div>
+                
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                Что обязательно брать с собой?
+                              </div>
+                              <div class="accordion__body">  
+                                - Головной убор (платок, кепка)
+                                - Верхняя одежда (толстовка, куртка) – зимой теплую одежду.
+                                - Портативная зарядное устройство
+                                - Медикаменты личного назначения (если такие есть) и аптечка
+                                - Удобная обувь (сменка) – в обуви должно быть удобно ходить по камням, песку. Не скользкая и не громоздкая.
+                                - Наличные (в городах есть банкоматы – можно снять. Просто предупредите гида и мы об этом позаботимся)
+                                - Крем от загара
+                                - Бутылочка для воды (в горах чистая вода, можно пить прямо из под крана)
+                              </div>
+                            </div>
+                
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                С детьми какого возраста можно поехать в Дагестан?
+                              </div>
+                              <div class="accordion__body">  
+                                Наши туры весьма интенсивные. Мы рекомендуем ехать с детьми старше 8 лет.
+                                Но мы не отказываем родителям, которые уверены в силах своих детей.
+                              </div>
+                            </div>
+                
+                             <div class="accordion__item">
+                              <div class="accordion__header">
+                                Нужен ли заграничный паспорт?
+                              </div>
+                              <div class="accordion__body">  
+                                Нет, при посещении нашей республики не требуется. Мы входим в состав Российской Федерации
+                              </div>
+                            </div>
+                
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                Оплата по карте как часто встречается?
+                              </div>
+                              <div class="accordion__body">  
+                                Встречается, но очень редко. Чаще всего оплата производится наличными либо переводом на карту сбербанка. Лучше запастись наличными или снять их в крупных городах (оповестите гида, он об этом побеспокоится)
+                              </div>
+                            </div>
+                
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                Какие мобильные операторы "сотовой связи" работают?
+                              </div>
+                              <div class="accordion__body">  		
+                                МТС, Мегафон, Билайн, Йота (нужно учитывать, что в горах, конечно, связь прерывается – предупредите об этом близких)
+                              </div>
+                            </div>
+                
+                            <div class="accordion__item">
+                              <div class="accordion__header">
+                                Можно ли употреблять спиртные напитки в туре?
+                              </div>
+                              <div class="accordion__body">  		
+                                Нет, употребление спиртных напитков является не желательным.
+                
+                                Не поддерживает употребление спиртных напитков, в целом, и не допускает употребления во время тура.
+                
+                                Это возможно, только в свободное время.
+                                (участник группы может быть исключен из неё, если находится в алкогольном опьянении или сильного похмелья")
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer_container w-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="navigation_footer" id="footer">
+                        <a href="/">Главная</a>
+                        <a href="#toursContainer">Туры</a>
+                        <a href="#toursContainer">Экскурсии</a>
+                        <a href="tel:79664444106">Позвонить</a>
+                        <a href="">WhatsApp</a>
+                    </div>
+                    <div class="logo_footer">
+                        <a href=""><img src="img/logoc.svg" alt=""></a>
+                    </div>
+                    <div class="text_footer text-white">
+                        © All Rights Reserved
+                    </div>
+                </div>
+            </footer>
+
+            <div class="form_modal">
+                <form id="modals" class="form">
+                    <div class="modal fade " id="formMainModal" tabindex="-1" aria-labelledby="formMainModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="validationServer01" class="form-label">Имя</label>
+                                        <input "text" class="form-control" placeholder="Иван" aria-label="First name" name="name" required> 
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="validationServer01" class="form-label">Номер телефона</label>
+                                        <input "text" type="tel" class="form-control tel" placeholder="Иван" aria-label="First name" name="phone" required> 
+                                    </div>
+                                    <div class="col-12 range_people">
+                                        <label for="customRange3" class="form-label mt-3">Количество человек</label>
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                        </ul>
+                                        <input type="range" class="form-range" min="0" max="9" step="1" id="customRange2" name="range">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Оставить сообщение</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                              <button type="submit" class="btn btn-primary">Оставить заявку</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </form>
+            </div>
+            
+            
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
